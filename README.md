@@ -1,3 +1,10 @@
+# fork mission statement
+
+This is just a proof of concept repo for stuffing all networking and the Pico
+webserver into core1 (for hopefully being able to run that in Pico MicroPython
+on core1 as well and give Pico MicroPython networking over USB -- the 
+webserver is used only for testing higher than "ping" network functionality).
+
 # pico-webserver
 
 Webserver example that came with TinyUSB slightly modified to run on a Raspberry Pi Pico.

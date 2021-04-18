@@ -118,6 +118,10 @@ void init_lwip(void)
     tusb_init();
     
     /* Initialize lwip */
+#ifdef LWIP_TIMERS
+#undef LWIP_TIMERS
+#endif
+#define LWIP_TIMERS 0
     lwip_init();
     
     /* the lwip virtual MAC address must be different from the host's; to ensure this, we toggle the LSbit */
